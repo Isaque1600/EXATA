@@ -15,7 +15,7 @@ export default function Home({}: Props) {
       <Header />
       <main className="">
         <Section className="relative flex h-[120vh]">
-          <GlassBox className="z-10 flex aspect-auto h-fit w-[1058px] flex-col gap-20 p-4 py-8 text-slate-300">
+          <GlassBox className="z-10 flex aspect-auto h-fit w-[1058px] flex-col gap-20 p-8 text-slate-300">
             <div className="space-y-10">
               <h1 className="font-inter text-wrap text-4xl font-bold text-white">
                 A SUA <span className="text-main">SOLUÇÃO</span> PARA{" "}
