@@ -8,6 +8,7 @@ export default {
     extend: {
       fontFamily: {
         nova: ["'Nova Cut'", "serif"],
+        inter: ["inter", "sans-serif"],
       },
       borderRadius: {
         lg: "var(--radius)",
@@ -15,9 +16,9 @@ export default {
         sm: "calc(var(--radius) - 4px)",
       },
       colors: {
-        main: "F5583C",
-        second: "1372ED",
-        third: "01B1FF",
+        main: "#F5583C",
+        second: "#1372ED",
+        third: "#01B1FF",
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
         card: {
@@ -73,7 +74,7 @@ export default {
         {
           values: flattenColors(theme("colors", {})),
           type: "color",
-        }
+        },
       );
 
       matchUtilities(
@@ -99,7 +100,18 @@ export default {
         {
           values: theme("spacing", {}),
           type: "length",
-        }
+        },
+      );
+    },
+    function ({ matchUtilities, theme }) {
+      matchUtilities(
+        {
+          // map to bg-radient-[*]
+          "bg-radient": (value) => ({
+            "background-image": `radial-gradient(${value},var(--tw-gradient-stops))`,
+          }),
+        },
+        { values: theme("radialGradients") },
       );
     },
   ],
