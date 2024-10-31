@@ -19,13 +19,10 @@ export default function Home({}: Props) {
             <div className="space-y-10">
               <h1 className="text-wrap font-inter text-xl font-bold md:text-4xl">
                 A SUA <span className="text-main">SOLUÇÃO</span> PARA{" "}
-                <p className="text-third">VIDROS E JANELAS</p>
+                <p className="text-third">VIDROS E ESQUADRIAS</p>
               </h1>
               <p className="text-justify">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                Excepturi quo ut vel illo ab. Rerum quo magni, totam itaque,
-                iste eligendi in numquam at dignissimos, error quia!
-                Dignissimos, veniam vitae?
+                A melhor empresa da região para a sua construção.
               </p>
             </div>
             <div className="flex flex-col items-center justify-center gap-12 md:flex-row">
@@ -66,29 +63,29 @@ export default function Home({}: Props) {
           <div className="grid grid-cols-1 grid-rows-3 gap-12 py-44 md:grid-cols-3 md:grid-rows-1 md:gap-20 md:p-44">
             <GlassBox className="flex h-80 w-fit flex-col space-y-16 p-12 text-white">
               <h1 className="text-wrap text-center text-2xl font-medium text-third">
-                Produção de Janelas
+                Produção de Esquadrias
               </h1>
               <p className="text-wrap text-center text-base text-white">
-                Produção das melhores janelas da região direto para sua
+                Produção das melhores esquadrias da região direto para sua
                 residencia
               </p>
             </GlassBox>
             <GlassBox className="flex h-80 w-fit flex-col space-y-16 p-12 text-white">
               <h1 className="text-wrap text-center text-2xl font-medium text-third">
-                Montagem das Janelas
+                Montagem das Esquadrias
               </h1>
               <p className="text-wrap text-center text-base text-white">
-                Basta nos contatar para montar a sua janela com a melhor
+                Basta nos contatar para montar a sua esquadria com a melhor
                 qualidade da região
               </p>
             </GlassBox>
             <GlassBox className="flex h-80 w-fit flex-col space-y-16 p-12 text-white">
               <h1 className="text-wrap text-center text-2xl font-medium text-third">
-                Instalação de Janelas
+                Instalação de Esquadrias
               </h1>
               <p className="text-wrap text-center text-base text-white">
                 Além da Montagem e Produção, também fazemos a Instalação das
-                Janelas
+                esquadrias
               </p>
             </GlassBox>
           </div>

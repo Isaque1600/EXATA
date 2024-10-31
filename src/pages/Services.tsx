@@ -36,13 +36,13 @@ export default function Services({}: Props) {
             />
             <ProductDisplayer
               image={image2}
-              title="Produção de Janelas"
-              description="Produção especializada em Janelas"
+              title="Produção de Esquadrias"
+              description="Produção especializada em Esquadrias"
             />
             <ProductDisplayer
               image={image3}
-              title="Instalação de Janelas"
-              description="Instalação profissional de Janelas"
+              title="Instalação de Esquadrias"
+              description="Instalação profissional de Esquadrias"
             />
             <ProductDisplayer
               image={image4}
@@ -61,8 +61,8 @@ export default function Services({}: Props) {
             />
             <ProductDisplayer
               image={image7}
-              title="Montagem de Janelas"
-              description="Montagem profissional de Janelas"
+              title="Montagem de Esquadrias"
+              description="Montagem profissional de Esquadrias"
             />
           </GlassBox>
         </Section>
