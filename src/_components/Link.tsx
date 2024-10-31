@@ -9,7 +9,7 @@ type Props = {
 
 export default function Link({ children, to, className }: Props) {
   return (
-    <span className="relative">
+    <span className="relative w-fit">
       <NavLink
         to={to}
         className={twMerge(

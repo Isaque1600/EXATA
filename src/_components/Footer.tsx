@@ -6,10 +6,12 @@ export default function Footer({}: Props) {
       <h1 className="w-full text-center text-lg font-bold text-white">
         Entre em Contato
       </h1>
-      <div className="flex w-full justify-between pr-3">
+      <div className="flex w-full flex-col justify-between space-y-8 pr-3 md:flex-row md:space-y-0">
         <div>
-          <h2 className="text-start text-base text-slate-400">Visite-nos</h2>
-          <p className="text-start text-sm text-slate-400">
+          <h2 className="text-center text-base text-slate-400 md:text-start">
+            Visite-nos
+          </h2>
+          <p className="text-center text-sm text-slate-400 md:text-start">
             Rua Lorem Ipsum Dolore
           </p>
         </div>
@@ -22,8 +24,10 @@ export default function Footer({}: Props) {
           </p>
         </div>
         <div>
-          <h2 className="text-end text-base text-slate-400">Email</h2>
-          <p className="text-end text-sm text-slate-400">
+          <h2 className="text-center text-base text-slate-400 md:text-end">
+            Email
+          </h2>
+          <p className="text-center text-sm text-slate-400 md:text-end">
             LoremIpsum@gmail.com
           </p>
         </div>

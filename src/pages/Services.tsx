@@ -20,15 +20,15 @@ export default function Services({}: Props) {
       <main>
         <Section className="space-y-40 p-24 text-white">
           <div className="space-y-12">
-            <h1 className="text-5xl font-extrabold">
+            <h1 className="text-xl font-extrabold md:text-5xl">
               O Serviço completo para sua <p>reforma</p>
             </h1>
-            <p className="text-lg">
+            <p className="text-sm md:text-lg">
               A solução ideal para a sua reforma, feita na{" "}
               <p>medida para a sua necessidade</p>
             </p>
           </div>
-          <GlassBox className="grid h-fit w-full grid-cols-3 gap-y-16 p-24">
+          <GlassBox className="grid h-fit w-full grid-cols-1 gap-y-16 p-24 md:grid-cols-3">
             <ProductDisplayer
               image={image1}
               title="Produção de Vidros"

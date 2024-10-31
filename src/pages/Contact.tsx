@@ -16,10 +16,10 @@ export default function Contact({}: Props) {
       <Header />
       <main>
         <Section className="space-y-24">
-          <h1 className="text-5xl font-bold text-white">
+          <h1 className="text-xl font-bold text-white md:text-5xl">
             Entre em contato conosco <p>para começar o seu projeto</p>
           </h1>
-          <GlassBox className="flex aspect-auto h-fit space-x-44 p-24 text-white">
+          <GlassBox className="flex aspect-auto h-fit flex-col items-center space-y-12 p-8 text-white md:flex-row md:space-x-24 md:space-y-0 md:p-24 lg:space-x-44">
             <div className="flex flex-col space-y-8">
               <div className="space-y-4">
                 <h1 className="text-xl font-semibold">Telefones:</h1>
@@ -44,13 +44,13 @@ export default function Contact({}: Props) {
                 <p className="text-slate-300">loremipsum@gmail.com</p>
               </div>
             </div>
-            <div className="flex h-fit flex-grow flex-col items-center">
+            <div className="m-0 flex h-fit flex-col items-center">
               <h1 className="text-center text-xl font-semibold">Endereço:</h1>
               {loading ? <Loader2 className="animate-spin" /> : ""}
               <iframe
                 onLoad={() => setLoading(!loading)}
-                width="850"
-                height="650"
+                width={screen.width > 1024 ? "850" : "250"}
+                height={screen.width > 1024 ? "650" : "250"}
                 referrerPolicy="no-referrer-when-downgrade"
                 src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBD3BxjBeswG0Htikyjb55DVCGKvjPz4zA&q=Eiffel+Tower,Paris+France"
                 allowFullScreen
