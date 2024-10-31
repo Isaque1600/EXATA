@@ -29,10 +29,16 @@ export default function Home({}: Props) {
               </p>
             </div>
             <div className="flex flex-col items-center justify-center gap-12 md:flex-row">
-              <Btn className="relative z-[1] bg-gradient-to-r from-third via-second to-third transition-all duration-150 ease-in-out before:absolute before:bottom-[2px] before:left-[2px] before:right-[2px] before:top-[2px] before:-z-[1] before:rounded-md before:bg-stone-800 before:content-[''] after:text-lg after:content-[attr(data)] hover:before:bg-slate-900">
+              <Btn
+                className="relative z-[1] bg-gradient-to-r from-third via-second to-third transition-all duration-150 ease-in-out before:absolute before:bottom-[2px] before:left-[2px] before:right-[2px] before:top-[2px] before:-z-[1] before:rounded-md before:bg-stone-800 before:content-[''] after:text-lg after:content-[attr(data)] hover:before:bg-slate-900"
+                to="/servicos"
+              >
                 Conheça Nossos Serviços
               </Btn>
-              <Btn className="text-nowrap border-2 border-slate-600">
+              <Btn
+                className="text-nowrap border-2 border-slate-600"
+                to="/contato"
+              >
                 Contate-nos
               </Btn>
             </div>
@@ -92,7 +98,10 @@ export default function Home({}: Props) {
             Sua <span className="text-main">Residencia</span> e{" "}
             <span className="text-second">Empresa</span> em um novo NIVEL
           </h1>
-          <Btn className="w-fit justify-self-center bg-third text-lg font-semibold hover:bg-second md:text-xl">
+          <Btn
+            className="w-fit justify-self-center bg-third text-lg font-semibold hover:bg-second md:text-xl"
+            to="/contato"
+          >
             Entre em Contato
           </Btn>
         </Section>
